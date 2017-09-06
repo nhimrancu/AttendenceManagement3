@@ -41,12 +41,12 @@
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             />
 
-        <Button
-            android:id="@+id/delete_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="delete"
-            />
+        <!--<Button-->
+            <!--android:id="@+id/delete_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="delete"-->
+            <!--/>-->
 
     </LinearLayout>
 
