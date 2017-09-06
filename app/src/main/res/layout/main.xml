@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@android:dimen/app_icon_size"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="arms.attendancemanagement.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showStudentsList"
+            android:text="Students" />
+
+        <Button
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showCoursesList"
+            android:text="Courses" />
+
+        <Button
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openAttendanceForm"
+            android:text="Take Attendance" />
+
+
+        <Button
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openConfirmAttendanceOptions"
+            android:text="Verify Attendences" />
+
+        <Button
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Attendace Info"
+            android:onClick="openEditForm"/>
+
+        <Button
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showInfo"
+            android:text="View Attendance Info" />
+    </LinearLayout>
+
+</LinearLayout>

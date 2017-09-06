@@ -1,0 +1,20 @@
+<resources>
+
+     <!--Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/back</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--button theme -->
+    <style name="ButtonTheme" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!--<style name="ActionBar.Text" parent="@android:style/TextAppearance">-->
+        <!--<item name="android:textColor">#fff</item>-->
+        <!--<item name="android:textSize">@android:dimen/app_icon_size</item>-->
+    <!--</style>-->
+
+</resources>
