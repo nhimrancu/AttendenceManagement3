@@ -44,12 +44,20 @@
 
     </LinearLayout>
     <!--course list-->
-    <ListView
+    <!--<ListView-->
+        <!--android:id="@+id/courseList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/courseListHeader"-->
+        <!--/>-->
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
         android:id="@+id/courseList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/courseListHeader"
         />
+
     <!--add button-->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/courseAddBtn"
