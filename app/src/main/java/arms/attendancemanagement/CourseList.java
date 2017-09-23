@@ -1,9 +1,12 @@
 package arms.attendancemanagement;
 
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,6 +27,8 @@ public class CourseList extends AppCompatActivity {
 
     CourseAdapter courseAdapter;
     ListView courseListView;
+
+
     ArrayList<Course> courses;
 
     private CourseInputDialog courseInputDialog; // input deyar jonno
@@ -35,10 +40,12 @@ public class CourseList extends AppCompatActivity {
         setTitle("Courses");
 
         courseListView = (ListView) findViewById(R.id.courseList);
+
         courses = Manager.getCourses(this);
 
         courseAdapter = new CourseAdapter(this, R.layout.student_sample, courses);
         courseListView.setAdapter(courseAdapter);
+
 
         registerForContextMenu(courseListView); // for context menu
 
@@ -64,6 +71,7 @@ public class CourseList extends AppCompatActivity {
         //----------------------------------------------
 
     } // end of onCreate method
+
 
     public void courseTakeAction(Course course){
         String msg;

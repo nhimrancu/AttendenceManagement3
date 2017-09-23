@@ -44,14 +44,7 @@
 
     </LinearLayout>
     <!--course list-->
-    <!--<ListView-->
-        <!--android:id="@+id/courseList"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/courseListHeader"-->
-        <!--/>-->
-
-    <com.baoyz.swipemenulistview.SwipeMenuListView
+    <ListView
         android:id="@+id/courseList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
