@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/listMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/courseCodeSample"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Code"
+            android:padding="10dp"
+            android:gravity="start"
+            android:textColor="#000"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            />
+
+        <TextView
+            android:id="@+id/courseTitleSample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Title"
+            android:padding="10dp"
+            android:gravity="start"
+            android:textColor="#000"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/undo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="undo"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_gravity="end|center_vertical"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        />
+
+    <!-- quick and dirty divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>
